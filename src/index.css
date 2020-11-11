@@ -51,6 +51,11 @@ h3{
   opacity: 0.9;
 }
 
+.ant-anchor-link-title:hover{
+  color:white !important;
+  opacity: 0.9;
+}
+
 .ant-anchor-link-title-active{
   color: white !important;
 }

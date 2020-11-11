@@ -7,10 +7,10 @@ export const BodyStyles = styled.div`
 `; 
 
 export const SocialNetworks = styled.div`  
- line-height:0px;
- display:flex;
- gap:15px;
  color:white;
+ display:flex;
+ line-height:0px;
+ gap:15px;
  font-size:25px; 
  &>div{
    cursor:pointer;

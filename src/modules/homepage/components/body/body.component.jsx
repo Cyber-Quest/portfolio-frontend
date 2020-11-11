@@ -6,7 +6,8 @@ import {
   GoogleOutlined,
   InstagramOutlined,
   WhatsAppOutlined,
-  SkypeOutlined
+  SkypeOutlined,
+  GithubOutlined
 } from "@ant-design/icons";
 
 import AboutPage from "../../../about/pages/about.component";
@@ -61,6 +62,9 @@ const Body = () =>{
                 <div>
                     <SkypeOutlined/>
                 </div> 
+                 <div>
+                    <GithubOutlined />
+                </div>
                 </SocialNetworks>
             </div>
             <div>
