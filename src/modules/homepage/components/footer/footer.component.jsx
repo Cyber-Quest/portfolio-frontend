@@ -74,7 +74,7 @@ const FooterPanel = () =>{
                         <div>
                             <SkypeOutlined/>
                         </div> 
-                        <div>
+                   h     <div>
                             <GithubOutlined />
                         </div>
                       </SocialNetworks>

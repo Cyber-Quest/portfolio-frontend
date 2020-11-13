@@ -9,7 +9,7 @@ import {AboutPanelStyles,
 const AboutPanel = () =>{
     return(
         <AboutPanelStyles>
-            <Row gutter={[24, 12]} style={{width:"950px"}}>
+            <Row gutter={[24, 12]} style={{width:"100%", maxWidth:"1100px"}}>
                 <Col xs={{ span: 24 }}
                     sm={{ span: 24 }}
                     md={{ span: 24 }}
