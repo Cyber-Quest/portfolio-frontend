@@ -11,6 +11,8 @@ import {
 } from "@ant-design/icons";
 
 import AboutPage from "../../../about/pages/about.component";
+import ContactPage from "../../../contact/pages/contact.component";
+
 import Button from "core/components/button/button.component";
 
 import {BodyStyles,
@@ -25,7 +27,7 @@ const Body = () =>{
    
     return(
         <BodyStyles>
-        <Card color="transparent" style={{boxShadow:"none", display:"flex", alignItems:"center", justifyContent:"left", width:"100%", height:"200px"}}>  
+        <Card color="transparent" style={{boxShadow:"none", display:"flex", alignItems:"center", justifyContent:"left", width:"100%", minHeight: "calc(100vh - 95px)"}}>  
             <div style={{ width:"800px", marginLeft:"40px", height:"auto", display:"flex", justifyContent:"space-between"}}>
             <div> 
             <h2>Hello, I am</h2>
@@ -47,24 +49,24 @@ const Body = () =>{
             <div style={{marginTop:"30px", marginBottom:"50px"}}>
                 <p>Find me on</p>
                 <SocialNetworks>
-                <div>
-                    <LinkedinOutlined/>
-                </div>
-                <div>
-                    <GoogleOutlined />
-                </div>
-                <div>
-                    <InstagramOutlined/>
-                </div>
-                <div>
-                    <WhatsAppOutlined/>
-                </div>
-                <div>
-                    <SkypeOutlined/>
-                </div> 
-                 <div>
-                    <GithubOutlined />
-                </div>
+                    <div>
+                        <LinkedinOutlined/>
+                    </div>
+                    <div>
+                        <GoogleOutlined />
+                    </div>
+                    <div>
+                        <InstagramOutlined/>
+                    </div>
+                    <div>
+                        <WhatsAppOutlined/>
+                    </div>
+                    <div>
+                        <SkypeOutlined/>
+                    </div> 
+                    <div>
+                        <GithubOutlined />
+                    </div>
                 </SocialNetworks>
             </div>
             <div>
@@ -87,7 +89,7 @@ const Body = () =>{
             projects
         </Card>
         <Card id="contact"> 
-            contacts
+            <ContactPage/>
         </Card>    
         </BodyStyles>
     )

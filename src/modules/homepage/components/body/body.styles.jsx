@@ -1,5 +1,4 @@
-import styled from "styled-components"; 
-import { HashLink } from 'react-router-hash-link'; 
+import styled from "styled-components";  
 
 export const BodyStyles = styled.div` 
  height:auto;
@@ -28,22 +27,14 @@ export const Avatar = styled.div`
  min-height: 374px;
 `
 export const Card = styled.div`  
+ display:flex;
+ align-items:center;
+ justify-content:center; 
  background: ${({ color }) => `${color ? color : "#333333"}`}; 
  width:100%; 
+ padding:10px;
  box-shadow: 0 0 15px #1a1a1a;
- ${() => `min-height: calc(600px);`}
+ height:auto;
+ min-height: 100vh;
  margin-bottom:50px;
-`
-
-export const AfixLink = styled(HashLink)` 
-  color: #8c8c8c;
-  &.active {
-    color: white !important;
-  }
-  &:hover{
-      color: white !important;
-  }
-  &:checked{
-      color: ${(props) => props.theme.primary_color} !important;
-  }
-`;
+` 

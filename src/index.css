@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&family=Yanone+Kaffeesatz&display=swap');
- 
- 
+  
 body {
   margin: 0;
   color: white; 
@@ -59,3 +58,33 @@ h3{
 .ant-anchor-link-title-active{
   color: white !important;
 }
+ 
+.ant-form-item-control-input-content > input, .ant-form-item-control-input-content > textarea {
+  background-color: #262626 !important; 
+  border: 1px solid #404040; 
+  width:100% !important;
+} 
+  
+input:focus{
+   border: transparent;
+}
+
+.ant-input {  
+    color:#999999 !important;
+}
+
+.ant-input:focus { 
+    text-decoration: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color:#bfbfbf !important;
+}
+
+.ant-input:hover { 
+    text-decoration: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    color:#bfbfbf !important;
+}
+ 
+ 
