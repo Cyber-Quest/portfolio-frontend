@@ -1,17 +1,22 @@
 import styled from "styled-components";
 
-export const ContactPanelStyles = styled.div``;
+export const ContactPanelStyles = styled.div` 
+  max-width:700px;
+  width:auto;
+  background:rgb(38, 38, 38, 0.6);
+  padding:50px 20px;
+`;
 
 export const Panel = styled.div`
-    width:100%;
-    padding: 0px 30px;
-    background: ${({ color }) => `${color ? color : "transparent"}`};
-    min-height:400px; 
-    height:auto;
+  width:100%;
+  padding: 0px 30px;
+  background: ${({ color }) => `${color ? color : "transparent"}`};
+  min-height:400px; 
+  height:auto;
 
-    @media only screen and (max-width: 800px) {
-      border: none !important;
-    }
+  @media only screen and (max-width: 800px) {
+    border: none !important;
+  }
 `;
 
 export const SocialNetworks = styled.div`   

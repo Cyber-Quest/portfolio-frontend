@@ -18,9 +18,9 @@ const Header = () => (
     <Anchor affix={false} style={{height:"150px", marginRight:40}}>
       <OptionsContainer> 
         <Link href="#home" title="HOME" />
-        <Link href="#about" title="ABOUT"/> 
+        <Link href="#about" title="ABOUT ME"/> 
+        <Link href="#services" title="SERVICES"/> 
         <Link href="#portfolio" title="PORTFOLIO" />
-        <Link href="#projects" title="PROJECTS"/> 
         <LinkActive href="#contact" title="CONTACT"/>
       </OptionsContainer>
     </Anchor>
