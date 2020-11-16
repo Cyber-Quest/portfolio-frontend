@@ -28,7 +28,7 @@ const ContactPanel = () =>{
 
     return(
         <ContactPanelStyles>
-            <Row gutter={[1, 12]} style={{width:"100%", maxWidth:"1100px"}}>
+            <Row gutter={[1, 12]} style={{width:"100%"}}>
                 <Col xs={{ span: 24 }}
                     sm={{ span: 24 }}
                     md={{ span: 9 }}

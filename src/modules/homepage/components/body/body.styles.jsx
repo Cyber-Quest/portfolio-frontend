@@ -30,10 +30,9 @@ export const Card = styled.div`
  display:flex;
  align-items:center;
  justify-content:center; 
- background: ${({ color }) => `${color ? color : "#333333"}`}; 
+ background: ${({ color }) => `${color ? color : "transparent"}`}; 
  width:100%; 
- padding:10px;
- box-shadow: 0 0 15px #1a1a1a;
+ padding:10px; 
  height:auto;
  min-height: 100vh;
  margin-bottom:50px;

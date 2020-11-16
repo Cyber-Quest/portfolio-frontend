@@ -12,6 +12,7 @@ import {
 
 import AboutPage from "../../../about/pages/about.component";
 import ContactPage from "../../../contact/pages/contact.component";
+import ServicesPage from "../../../services/pages/services.component";
 
 import Button from "core/components/button/button.component";
 
@@ -41,8 +42,8 @@ const Body = () =>{
                 <Anchor>
                     <Link href="#home" title="01" />
                     <Link href="#about" title="02"/> 
-                    <Link href="#portfolio" title="03" />
-                    <Link href="#projects" title="04"/>
+                    <Link href="#services" title="03" />
+                    <Link href="#portfolio" title="04"/>
                     <Link href="#contact" title="05"/>
                 </Anchor>
             </div>
@@ -70,7 +71,7 @@ const Body = () =>{
                 </SocialNetworks>
             </div>
             <div>
-                <Button btntype="primary">Hire Me</Button> 
+                <Button btntype="primary" style={{width:120}}>Download CV</Button> 
                 <Button btntype="primaryOutlined" style={{marginLeft:"10px"}}>
                   Portfolio
                 </Button>
@@ -79,14 +80,14 @@ const Body = () =>{
             <Avatar image={avatar_image}/> 
             </div>
         </Card> 
-        <Card id="about"> 
+        <Card id="about" > 
             <AboutPage/>
+        </Card> 
+        <Card id="services"> 
+            <ServicesPage/>
         </Card>
         <Card id="portfolio"> 
             portfolio
-        </Card>
-        <Card id="projects"> 
-            projects
         </Card>
         <Card id="contact"> 
             <ContactPage/>

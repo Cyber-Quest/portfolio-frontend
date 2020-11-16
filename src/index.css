@@ -87,4 +87,6 @@ input:focus{
     color:#bfbfbf !important;
 }
  
- 
+.ant-progress-text{
+  color:white !important;
+}
