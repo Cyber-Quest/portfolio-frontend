@@ -28,12 +28,17 @@ export const Avatar = styled.div`
 `
 export const Card = styled.div`  
  display:flex;
- align-items:center;
- justify-content:center; 
+ align-items:center;  
+ flex-flow:column;
  background: ${({ color }) => `${color ? color : "transparent"}`}; 
- width:100%; 
- padding:10px; 
+ width:100%;  
+ height:auto;     
+` 
+
+export const BordedConnector = styled.div`  
+ border-left: 3px solid white; 
+ border-style: dashed;
  height:auto;
- min-height: 100vh;
- margin-bottom:50px;
+ width:10px; 
+ min-height: 40px; 
 ` 

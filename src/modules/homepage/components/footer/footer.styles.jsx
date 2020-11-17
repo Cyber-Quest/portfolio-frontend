@@ -1,8 +1,9 @@
 import styled from "styled-components";  
 
 export const FooterPanelStyles = styled.div`
-    height:auto;
-    background-color:#333333;
+    margin-top:100px;
+    height:auto; 
+    background:rgb(38, 38, 38, 0.6);
 `;
 
 export const FooterContainer = styled.div`

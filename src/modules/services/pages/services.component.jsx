@@ -1,5 +1,7 @@
 import React from "react";
 
+import ServicesPanel from "../components/services-panel/services-panel.component";
+
 import {
         ServicesPageStyles
        } from "./services.styles";
@@ -7,7 +9,7 @@ import {
 const ServicesPage = () =>{
     return(
         <ServicesPageStyles>
-            ServicesPage
+            <ServicesPanel/>
         </ServicesPageStyles>
     )
 }

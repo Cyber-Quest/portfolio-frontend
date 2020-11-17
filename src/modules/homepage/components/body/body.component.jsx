@@ -13,13 +13,14 @@ import {
 import AboutPage from "../../../about/pages/about.component";
 import ContactPage from "../../../contact/pages/contact.component";
 import ServicesPage from "../../../services/pages/services.component";
+import PortfolioPage from "../../../portfolio/pages/portfolio.component";
 
 import Button from "core/components/button/button.component";
 
 import {BodyStyles,
         Card,
         Avatar,
-        SocialNetworks,
+        SocialNetworks, 
         } from "./body.styles";
 
 const { Link } = Anchor;
@@ -28,7 +29,7 @@ const Body = () =>{
    
     return(
         <BodyStyles>
-        <Card color="transparent" style={{boxShadow:"none", display:"flex", alignItems:"center", justifyContent:"left", width:"100%", minHeight: "calc(100vh - 95px)"}}>  
+        <Card color="transparent" style={{ justifyContent:"left", flexFlow:"row",    minHeight: "calc(100vh - 95px)"}}>  
             <div style={{ width:"800px", marginLeft:"40px", height:"auto", display:"flex", justifyContent:"space-between"}}>
             <div> 
             <h2>Hello, I am</h2>
@@ -81,13 +82,13 @@ const Body = () =>{
             </div>
         </Card> 
         <Card id="about" > 
-            <AboutPage/>
+            <AboutPage/>  
         </Card> 
         <Card id="services"> 
-            <ServicesPage/>
+            <ServicesPage/> 
         </Card>
         <Card id="portfolio"> 
-            portfolio
+            <PortfolioPage/>
         </Card>
         <Card id="contact"> 
             <ContactPage/>

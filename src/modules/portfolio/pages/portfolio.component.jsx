@@ -1,13 +1,15 @@
 import React from "react";
 
+import PortfolioPanel from "../components/portfolio-panel/portfolio-panel.component";
+
 import {
         PortfolioPageStyles
-       } from "./Portfolio.styles";
+       } from "./portfolio.styles";
 
 const PortfolioPage = () =>{
     return(
         <PortfolioPageStyles>
-            PortfolioPage
+            <PortfolioPanel/>
         </PortfolioPageStyles>
     )
 }
