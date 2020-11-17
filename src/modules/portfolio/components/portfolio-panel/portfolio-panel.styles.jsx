@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
-export const AboutPanelStyles = styled.div`  
-    background:rgb(38, 38, 38, 0.6);
-    max-width:700px;
-    width:auto;
-    padding:50px 20px;
-    margin-top:120px;
+export const PortfolioPanelStyles = styled.div`
+  max-width:700px;
+  width:auto;
+  background:rgb(38, 38, 38, 0.6);
+  padding:50px 20px;
 `;
-
+  
 export const Title = styled.div`
     font-size:25px;
     line-height:30px;
@@ -17,8 +16,11 @@ export const Title = styled.div`
 `;
 
 export const Subject = styled.div`
+    text-align:center;
     font-size:15px;
     color:#999999;
+    max-width:500px;
+    width:auto;
 `;
  
 export const Container = styled.div`
@@ -29,13 +31,4 @@ export const Container = styled.div`
     height:auto; 
     max-width:700px;
     width:auto; 
-`;
-
-export const AboutImg = styled.div`   
-  background-image: ${({ imageUrl }) => `url(${imageUrl})`};
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  width:100%;
-  height:100%;  
-  border-radius:50%;
 `;

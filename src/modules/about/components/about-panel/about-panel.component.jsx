@@ -14,7 +14,7 @@ const AboutPanel = () =>{
         <AboutPanelStyles> 
             <Container>
                 <div style={{border:"1px solid #737373", width:"150px", height:"150px", padding: "5px", borderRadius:"50%", marginTop:"-120px",  marginBottom:"30px"}}> 
-                    <AboutImg imageUrl={ImgAbout}/>
+                <AboutImg imageUrl={ImgAbout}/>
                 </div>
                 <Title>Read About My Life Struggle Story</Title>
                 <br/>
