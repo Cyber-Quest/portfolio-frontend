@@ -3,14 +3,19 @@ import styled from 'styled-components'
 export const HomePageStyles = styled.div` 
   position:relative; 
   display:flex;
+  flex-flow:wrap;
   justify-content:center;  
   z-index:999; 
   width:100%;
 ` 
 export const Container = styled.div`   
   width:100%; 
+  padding: 0px 40px;
   @media only screen and (min-width: 1025px) {
     max-width:1024px; 
+  }
+  @media only screen and (max-width: 725px) {
+     padding: 0px 5px; 
   }
 ` 
 export const FixedComponent = styled.div`

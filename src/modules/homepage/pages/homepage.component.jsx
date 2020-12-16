@@ -18,8 +18,8 @@ const HomePage = () => {
     <Container>
       <Header/> 
       <Body/>
-      <Footer/>
-    </Container> 
+    </Container>  
+    <Footer/>
   </HomePageStyles>
   );
 };

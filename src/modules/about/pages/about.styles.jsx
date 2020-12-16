@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const AboutPageStyles = styled.div` 
- width:100%;
- max-width:700px;
+ width:100%; 
  height:auto;
 `;

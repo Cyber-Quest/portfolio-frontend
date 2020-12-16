@@ -1,6 +1,6 @@
 import React from "react";
 
-import ContactPanel from "../components/contact-panel/contact-panel.component";
+import ContactPanel from "../components/contact-panel/contact-panel.container";
 
 import {
         ContactPageStyles

@@ -1,6 +1,7 @@
 import styled from "styled-components";  
 
 export const FooterPanelStyles = styled.div`
+    width:100%;
     margin-top:100px;
     height:auto; 
     background:rgb(38, 38, 38, 0.6);
@@ -10,6 +11,10 @@ export const FooterContainer = styled.div`
     display:flex;
     justify-content:center; 
     height:100px; 
+    @media only screen and (max-width: 800px) { 
+        justify-content:center;
+        margin-top:10px; 
+    }
 `;
 
 export const CopyRight = styled.div` 
@@ -40,7 +45,7 @@ export const OptionsContainer = styled.div`
   font-size:15px; 
   & .ant-anchor-link{
       width:100px !important;
-  }
+  } 
 `;
  
 export const SocialNetworks = styled.div`  
@@ -50,11 +55,17 @@ export const SocialNetworks = styled.div`
  line-height:35px;
  gap:0px 20px;
  font-size:25px; 
- width: 150px;
- &>div{
+ width: 150px; 
+ a{ 
    cursor:pointer;
+   color:whitesmoke !important;
  }
- &>div:hover {
-  color:white;
+ a:hover {
+  color:white !important;
+  opacity: 0.6;
+ }
+ @media only screen and (max-width: 800px) { 
+    justify-content:center;
+    margin-top:10px; 
  }
 `

@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import { Link as Linked } from "react-router-dom";  
-import { Anchor} from 'antd';  
-
-const { Link } = Anchor;
+import { Link as Linked } from "react-router-dom";   
+import{MenuOutlined} from "@ant-design/icons"; 
 
 export const HeaderStyles= styled.div` 
   display: flex;
@@ -25,7 +23,21 @@ export const Logo = styled.div`
   color:white;
   font-family: 'Sansita Swashed', cursive;
   font-size:30px;
-  margin-left:40px;
+  @media only screen and (max-width: 800px) {  
+    margin-left:10px;
+  }
+`;
+
+export const MenuOutlinedExpand = styled(MenuOutlined)` 
+  color:white;
+  cursor:pointer;
+  font-size:18px;
+  margin-top:25px;
+  margin-right:10px;
+  display: none;
+  @media only screen and (max-width: 800px) { 
+    display: flex;
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -34,34 +46,31 @@ export const OptionsContainer = styled.div`
   justify-content: flex-end;
   width: 100%;
   height: 70px; 
-  font-size:15px; 
-`;
- 
-export const LinkActive = styled(Link)`
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500; 
-  font-size: 13px; 
-  text-align: left;
-  border-radius: 4px;
-  color:white !important;
-  background: transparent !important;
-  border: 1px solid ${(props) => props.theme.primary_color} !important ;
-  padding:7px 5px;
-  width:100px;
-  border-radius:15px;
-  text-align:center;
-  margin-left:15px;
-  &:disabled {
-    opacity: 0.7;
-  } 
-  &:hover{
-    background: ${(props) => props.theme.primary_color} !important; 
+  font-size:15px;
+  span{
+      display:none;
   }
-  &.ant-anchor-link .ant-anchor-link-title{
-    color:#00ccff  !important;
-  }  
-  &:hover.ant-anchor-link .ant-anchor-link-title{
-    color:white !important;
-  }  
-`;
+  @media only screen and (max-width: 800px) {
+    display: ${({ visible }) => `${visible ? "flex":"none"}`};
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap:20px;
+    background:rgb(26, 26, 26);
+    z-index:99;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh; 
+    span{
+      position:absolute;  
+      display: flex; 
+      align-items:center; 
+      top:0; 
+      right:0;
+      width:50px;
+      height:40px;
+    }
+  } 
+`; 

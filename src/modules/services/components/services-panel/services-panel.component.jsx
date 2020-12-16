@@ -17,10 +17,10 @@ const ServicesPanel = () =>{
             <Container> 
                 <Title>Skills & Services</Title>
                 <br/>
-                <Subject>    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus magnam unde libero quidem quis dolore autem voluptatibus?  
+                <Subject>     
+                    Programming languages ​​and web services acquired over time. 
                 </Subject>
-                <div style={{width:"80%", marginTop:"30px", display:"flex", flexFlow:"row", gap:"10px", flexWrap:"wrap"}}>
+                <div style={{width:"80%", marginTop:"30px", display:"flex", flexFlow:"row",justifyContent:"center", flexWrap:"wrap",  gap:"10px"}}>
                     <Tag>
                         <TagType>
                             <BiCodeAlt />
@@ -57,6 +57,7 @@ const ServicesPanel = () =>{
                         <TagTitle>AWS</TagTitle>
                     </Tag>
                 </div>
+                <br/>
             </Container> 
         </ServicesPanelStyles>
     )

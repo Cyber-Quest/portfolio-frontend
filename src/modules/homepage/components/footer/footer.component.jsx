@@ -42,9 +42,9 @@ const FooterPanel = () =>{
                         <Anchor affix={false} > 
                             <OptionsContainer> 
                                 <Link href="#home" title="HOME" />
-                                <Link href="#about" title="ABOUT"/> 
+                                <Link href="#about" title="ABOUT"/>  
+                                <Link href="#services" title="SERVICES"/> 
                                 <Link href="#portfolio" title="PORTFOLIO" />
-                                <Link href="#projects" title="PROJECTS"/> 
                                 <Link href="#contact" title="CONTACT"/>
                             </OptionsContainer>
                         </Anchor>
@@ -59,24 +59,24 @@ const FooterPanel = () =>{
                     xxl={{ span: 8 }} >
                     <FooterContainer>
                         <SocialNetworks>
-                        <div>
-                            <LinkedinOutlined/>
-                        </div>
-                        <div>
-                            <GoogleOutlined />
-                        </div>
-                        <div>
-                            <InstagramOutlined/>
-                        </div>
-                        <div>
-                            <WhatsAppOutlined/>
-                        </div>
-                        <div>
-                            <SkypeOutlined/>
-                        </div> 
-                   h     <div>
-                            <GithubOutlined />
-                        </div>
+                            <a href="https://www.linkedin.com/in/wesley-campana-ferreira-081b55152/" target="_blank"  rel="noopener noreferrer">
+                                <LinkedinOutlined/>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=wesley9983@gmail.com&tf=1" target="_blank" rel="noopener noreferrer">
+                                <GoogleOutlined />
+                            </a>
+                            <a href="https://www.instagram.com/wesley.ferreira99/" target="_blank" rel="noopener noreferrer">
+                                <InstagramOutlined/>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5519987795272&text=Bora conversar?" target="_blank" rel="noopener noreferrer">
+                                <WhatsAppOutlined/>
+                            </a>
+                            <a href="https://join.skype.com/invite/suqGX1PQIPoq" target="_blank" rel="noopener noreferrer">
+                                <SkypeOutlined/>
+                            </a> 
+                            <a href="https://github.com/Cyber-Quest" target="_blank" rel="noopener noreferrer">
+                                <GithubOutlined />
+                            </a>
                       </SocialNetworks>
                     </FooterContainer>     
                 </Col>   

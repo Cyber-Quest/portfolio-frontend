@@ -1,6 +1,6 @@
 import React from "react";
 
-import PortfolioPanel from "../components/portfolio-panel/portfolio-panel.component";
+import PortfolioPanel from "../components/portfolio-panel/portfolio-panel.container";
 
 import {
         PortfolioPageStyles
