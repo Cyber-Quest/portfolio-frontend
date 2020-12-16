@@ -15,7 +15,6 @@ import "./index.css";
 
 import "antd/dist/antd.css";
 import "react-credit-cards/es/styles-compiled.css";
-  
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

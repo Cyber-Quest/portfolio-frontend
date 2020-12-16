@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const ServicesPanelStyles = styled.div`  
+export const ServicesPanelStyles = styled.div`   
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    align-items:center;
     width:100%;
     background:rgb(38, 38, 38, 0.6);
     padding:50px 20px;

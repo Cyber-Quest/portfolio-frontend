@@ -1,19 +1,66 @@
-import React from "react";
+import React, { useState, useCallback, useEffect } from "react"; 
+import { Empty } from 'antd';
+
+import Button from "core/components/button/button.component";
 
 import {PortfolioPanelStyles,
         Title,
         Subject,
-        Container} from "./portfolio-panel.styles";
+        Container,
+        ProjectPanel} from "./portfolio-panel.styles";
 
-const PortfolioPanel = () =>{
+const PortfolioPanel = ({
+    getProjects = () => null,
+    projects
+}) =>{
+    const [state, setState] = useState({
+        data: [],
+    }); 
+
+    const getProjectsCallback = useCallback(() => {
+        getProjects();
+    }, [getProjects]);
+
+    useEffect(() => {
+       getProjectsCallback();
+    }, [getProjectsCallback]);
+
+    useEffect(() => {
+        if (!projects.loading) setState({ data: projects.items })  
+    }, [setState, projects]);  
+
     return(
         <PortfolioPanelStyles>
             <Container> 
                 <Title>My Portfolio</Title>
                 <br/>
-                <Subject>    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique temporibus magnam unde libero quidem quis dolore autem voluptatibus?  
+                <Subject>     
+                    Projects created with the aim of demonstrating my knowledge. 
                 </Subject>
+                <div style={{width:"90%", minHeight:"500px", marginTop:"30px", display:"flex", justifyContent:"center", flexFlow:"row", gap:"30px 20px", flexWrap:"wrap"}}> 
+                    {!projects.loading  ? 
+                        state.data.length > 0 ?
+                            state.data.slice(0, 6).map((item, index) =>{
+                                return (
+                                <ProjectPanel key={`${index}`} image={item.link} href={`https://${item.name}.netlify.app`} target="_blank">
+                                    <div>
+                                        <p>
+                                           {item.title}
+                                        </p>
+                                        <p>
+                                           {item.subtitle}
+                                        </p>
+                                    </div>
+                                </ProjectPanel>  
+                                )
+                            })
+                        :
+                        <Empty/>
+                    : null}
+                </div> 
+                <a href="https://cyber-my-projects.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <Button btntype="primary" style={{marginTop:"40px"}}>View All</Button>
+                </a>
             </Container> 
         </PortfolioPanelStyles>
     )

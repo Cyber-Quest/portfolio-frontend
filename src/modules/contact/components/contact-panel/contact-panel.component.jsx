@@ -7,13 +7,16 @@ import {
 } from "@ant-design/icons";
 
 import Button from "core/components/button/button.component";
+import Notification from "core/components/notification/notification.component";
 
 import {ContactPanelStyles, 
         Panel,
         SocialNetworks, 
         Item} from "./contact-panel.styles";
 
-const ContactPanel = () =>{ 
+const ContactPanel = ({
+    postSendEmail = () => null
+}) =>{ 
 
     const validateMessages = {
         required: 'field is required!',
@@ -22,8 +25,18 @@ const ContactPanel = () =>{
         }, 
     };
  
-    const onFinish = values => {
-        console.log(values);
+    const onFinish  = async fields => {
+        const payload = {
+            to: "wesley9983@gmail.com",
+            from: "wesley9983@gmail.com",
+            subject: fields.topic,
+            text: `(${fields.email}): ${fields.name} ${fields.lastname} sent this message: ${fields.message}`
+        }
+        const response = await postSendEmail(payload);
+        if(response)
+            Notification("success", "Email enviado com sucesso!");
+        else
+            Notification("fail", response);
     };
 
     return(

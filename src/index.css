@@ -19,11 +19,10 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a{
+  color:white !important;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -37,10 +36,6 @@ p{
 
 h3{
   line-height: 0px;
-}
-
-.ant-affix{
-  width:100% !important;
 }
  
 .ant-anchor-wrapper {
@@ -57,6 +52,7 @@ h3{
 
 .ant-anchor-link-title{
   color:#b3b3b3 !important;
+  font-size: 14px;
   opacity: 0.9;
 }
 
@@ -99,4 +95,8 @@ input:focus{
  
 .ant-progress-text{
   color:white !important;
+}
+  
+.ant-tooltip-inner{ 
+  color: black !important;
 }

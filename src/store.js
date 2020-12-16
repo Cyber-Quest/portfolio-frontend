@@ -8,13 +8,13 @@ import storage from "redux-persist/lib/storage";
 import thunk from "redux-thunk";
 
 // Reducers
-import homepage_reducer from "./modules/homepage/redux/root-reducer";
+import portfolio_reducer from "./modules/portfolio/redux/root-reducer";
 
 // Sagas
-import homepage_sagas from "./modules/homepage/redux/root-sagas";
+import portfolio_sagas from "./modules/portfolio/redux/root-sagas";
 
 const reducers = combineReducers({
-  default: homepage_reducer,
+  portfolio: portfolio_reducer,
 });
 
 const persistConfig = {
@@ -42,7 +42,7 @@ export const store = createStore(
 
 export const persistor = persistStore(store);
 
-sagaMiddleware.run(homepage_sagas);
+sagaMiddleware.run(portfolio_sagas);
 
 export default {
   store,

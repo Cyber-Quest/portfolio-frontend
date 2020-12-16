@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const AboutPanelStyles = styled.div`  
-    background:rgb(38, 38, 38, 0.6);
-    max-width:700px;
-    width:auto;
-    padding:50px 20px;
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center;
+    align-items:center;
+    background:rgb(38, 38, 38, 0.6); 
+    width:100%;
+    padding:0px 20px;
     margin-top:120px;
 `;
 
@@ -19,6 +22,8 @@ export const Title = styled.div`
 export const Subject = styled.div`
     font-size:15px;
     color:#999999;
+    width:60%;
+    text-align:center; 
 `;
  
 export const Container = styled.div`
@@ -26,9 +31,9 @@ export const Container = styled.div`
     flex-direction:column; 
     justify-content:center;
     align-items:center;
-    height:auto; 
-    max-width:700px;
-    width:auto; 
+    height:auto;  
+    width:100%;  
+    padding:0px 10px;
 `;
 
 export const AboutImg = styled.div`   
