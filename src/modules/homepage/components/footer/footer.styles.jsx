@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const FooterPanelStyles = styled.div`
     width:100%;
     margin-top:100px;
-    height:auto; 
-    background:rgb(38, 38, 38, 0.6);
+    height:auto;  
 `;
 
 export const FooterContainer = styled.div`

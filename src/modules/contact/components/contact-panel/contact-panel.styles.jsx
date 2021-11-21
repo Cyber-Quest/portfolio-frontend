@@ -2,18 +2,20 @@ import styled from "styled-components";
 
 export const ContactPanelStyles = styled.div` 
   max-width:100%;
-  width:auto;
-  background:rgb(38, 38, 38, 0.6);
-  padding:50px 20px;
+  width:auto; 
+  padding:50px 0px;
 `;
 
 export const Panel = styled.div`
   width:100%;
-  padding: 0px 30px;
+  padding: 0px 70px;
   background: ${({ color }) => `${color ? color : "transparent"}`};
   min-height:400px; 
   height:auto;
 
+  h2{
+    margin-bottom: 62px;
+  }
   @media only screen and (max-width: 800px) {
     border: none !important;
     display:flex;
@@ -25,7 +27,10 @@ export const Panel = styled.div`
   }
 `;
 
-export const SocialNetworks = styled.div`   
+export const SocialNetworks = styled.div`
+display: flex;
+flex-flow: column;
+gap: 48px;
  height: auto;     
  color:white;
  font-size:25px;
@@ -35,7 +40,9 @@ export const SocialNetworks = styled.div`
     flex-flow:column;
   }
 `
-export const Item = styled.div`  
+export const Item = styled.div`
+display: flex;
+gap: 16px;
  @media only screen and (max-width: 800px) { 
     display:flex;
     justify-content:center; 
