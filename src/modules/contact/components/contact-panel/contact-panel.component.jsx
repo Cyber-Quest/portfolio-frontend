@@ -48,28 +48,23 @@ const ContactPanel = ({
                     lg={{ span: 9 }}
                     xl={{ span: 9 }}
                     xxl={{ span: 9 }} >
-                    <Panel style={{borderRight:"1px solid #262626"}}>
-                        <h2>Our contacts</h2>
-                        <br/>
-                        <br/>
-                        <br/>
+                    <Panel style={{borderRight:"1px solid #4d4d4d"}}>
+                        <h2>Our contacts</h2> 
                         <SocialNetworks> 
                             <Item> 
-                                <WhatsAppOutlined/> {" "}
+                                <WhatsAppOutlined/>
                                 <span style={{fontSize:"14px"}}>
-                                    +55 19 987795272
+                                    +55 19 999379949
                                 </span>
-                            </Item>  
-                            <br/>
+                            </Item>   
                             <Item>  
-                                <PhoneOutlined />{" "}
+                                <PhoneOutlined />
                                 <span style={{fontSize:"14px"}}>
                                     +55 19 33623383
                                 </span>
-                            </Item> 
-                            <br/>
+                            </Item>  
                             <Item>  
-                                <MailOutlined />{" "}
+                                <MailOutlined />
                                 <span style={{fontSize:"14px"}}>
                                    wesley9983@gmail.com
                                 </span>
@@ -84,10 +79,7 @@ const ContactPanel = ({
                     xl={{ span: 15}}
                     xxl={{ span: 15}} >
                     <Panel>
-                        <h2>Send me a message</h2>
-                        <br/>
-                        <br/>
-                        <br/> 
+                        <h2>Send me a message</h2>   
                         <Form onFinish={onFinish} validateMessages={validateMessages}>
                             <Row gutter={[24, 12]} >
                                 <Col xs={{ span: 24 }}
@@ -147,7 +139,7 @@ const ContactPanel = ({
                                         xl={{ span: 24 }}
                                         xxl={{ span: 24 }} style={{ display:"flex", justifyContent:"flex-end"}}>
                                             <Button btntype="primary" htmlType="submit">
-                                                Enviar
+                                                Send
                                             </Button>     
                                 </Col>  
                             </Row>

@@ -18,18 +18,14 @@ export const Container = styled.div`
      padding: 0px 5px; 
   }
 ` 
-export const FixedComponent = styled.div`
-  top:0;
-  position:fixed;
-  z-index:-1; 
+export const FixedComponent = styled.div` 
+  z-index:-5; 
+  position: absolute;
   background-color:black;
-  background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  min-width: 100vw;
+  background-color: #24292e;
+    background-image: url("https://desktop.github.com/images/star-bg.svg"),linear-gradient(#191c20, #24292e 15%);
+    background-repeat: repeat-x;
+    background-position: center 0, 0 0, 0 0;
+  min-width: 100%;
   min-height: 100vh; 
 `

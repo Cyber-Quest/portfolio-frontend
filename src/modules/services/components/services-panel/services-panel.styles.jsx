@@ -5,9 +5,10 @@ export const ServicesPanelStyles = styled.div`
     flex-direction:column; 
     justify-content:center;
     align-items:center;
-    width:100%;
-    background:rgb(38, 38, 38, 0.6);
-    padding:50px 20px;
+    width:100%;   
+    background-image: url('https://desktop.github.com/images/star-bg.svg') ;
+    background-repeat:  no-repeat;
+    background-position: 10px -150px, 0 0, 0 0;
 `;
 
 export const Title = styled.div`
@@ -31,17 +32,18 @@ export const Container = styled.div`
     flex-direction:column; 
     justify-content:center;
     align-items:center;
+    gap: 16px;
     height:auto; 
-    max-width:700px;
-    width:auto; 
+    width:80%; 
 `;
 
 export const Tag = styled.div` 
   display:flex;
   align-items:center; 
-  background: #262626; 
+  background: white;
+  color: black;
   color:white;
-  width:165px;
+  width:145px;
   height: 40px;
   padding: 5px 8px;
   border-radius:3px;
@@ -60,6 +62,7 @@ export const TagType = styled.div`
 `;
 
 export const TagTitle = styled.div`
+color: black;
  float:left;
  margin-left:10px; 
  font-size:14px;
