@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import { Anchor } from "antd";
 
 import Button from "core/components/button/button.component";
@@ -17,9 +17,7 @@ const AboutPanel = () => {
     <AboutPanelStyles>
       <Container>
         <Title>Read About My Life Struggle Story</Title>
-        <Subtitle>
-          Projects created with the aim of demonstrating my knowledge.
-        </Subtitle>
+        <Subtitle>My motivations to study</Subtitle>
         <Subject>
           <div className="about">
             <div className="about-item">
@@ -42,7 +40,7 @@ const AboutPanel = () => {
               productivity and my ambitions as a developer.
             </div>
           </div>
-          <Anchor affix={false} style={{marginTop: "48px"}}>
+          <Anchor affix={false} style={{ marginTop: "48px" }}>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <a
                 class="object-detail-page-actions download-link"

@@ -4,7 +4,11 @@ export const PortfolioPanelStyles = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;   
+  width: 100%; 
+  background-image: url("https://desktop.github.com/images/star-bg.svg");
+  background-repeat: no-repeat;
+
+  background-position: 90px -100px, 0 0, 0 0;
 `;
 
 export const Title = styled.div`
@@ -33,7 +37,7 @@ export const Container = styled.div`
   width: 100%;
   .portfolio {
     width: 100%;
-    display: flex; 
+    display: flex;
     justify-content: center;
     gap: 32px;
     flex-wrap: wrap;
@@ -47,42 +51,40 @@ export const ProjectPanel = styled.a`
   justify-content: center;
   border-radius: 3px;
   cursor: pointer;
-  background:  
-    ${({ image }) => `url(${image})`};
+  background: ${({ image }) => `url(${image})`};
 
   background-size: cover;
   height: 230px;
   width: 100%;
-  max-width: 220px;
+  max-width: 283px;
   & div {
-    visibility: hidden;
+    visibility: visible;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
-    background: rgb(0, 163, 204, 0.9);
+    background: rgb(255, 255, 255, 0.9);
     width: 100%;
     height: 230px;
-    opacity: 0;
+    opacity: 0.8;
     border-radius: 3px;
     transition: visibility 0s, opacity 0.5s linear;
     p {
       width: auto;
       font-size: 18px;
       font-weight: 700;
+      color: black !important;
     }
     p:nth-child(2) {
       font-size: 15px;
       font-weight: 200 !important;
-      color: #d9d9d9 !important;
     }
   }
 
   &:hover {
     & div {
-      visibility: visible;
-      opacity: 1;
+      visibility: hidden;
+      opacity: 0;
     }
   }
 `;

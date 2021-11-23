@@ -16,21 +16,37 @@ const ServicesPanel = () => {
   return (
     <ServicesPanelStyles>
       <Container>
-        <Title>Skills & Services</Title> 
+        <Title>Skills & Services</Title>
         <Subject>
           Programming languages ​​and web services acquired over time.
         </Subject>
         <div
-          style={{
-            width: "80%",
-            marginTop: "30px",
+          style={{  
             display: "flex",
             flexFlow: "row",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "10px",
+            gap: "8px",
           }}
         >
+           <Tag>
+            <TagType>
+              <BiCodeAlt />
+            </TagType>
+            <TagTitle>C</TagTitle>
+          </Tag>
+           <Tag>
+            <TagType>
+              <BiCodeAlt />
+            </TagType>
+            <TagTitle>C#</TagTitle>
+          </Tag>
+          <Tag>
+            <TagType>
+              <BiCodeAlt />
+            </TagType>
+            <TagTitle>SQL</TagTitle>
+          </Tag> 
           <Tag>
             <TagType>
               <BiCodeAlt />
@@ -45,9 +61,9 @@ const ServicesPanel = () => {
           </Tag>
           <Tag>
             <TagType>
-              <CloudServerOutlined />
+              <BiCodeAlt />
             </TagType>
-            <TagTitle>Google Cloud</TagTitle>
+            <TagTitle>PHP</TagTitle>
           </Tag>
           <Tag>
             <TagType>
@@ -59,15 +75,34 @@ const ServicesPanel = () => {
             <TagType>
               <BiCodeAlt />
             </TagType>
-            <TagTitle>PHP</TagTitle>
+            <TagTitle>React.js</TagTitle>
           </Tag>
+          <Tag>
+            <TagType>
+              <BiCodeAlt />
+            </TagType>
+            <TagTitle>Node.js</TagTitle>
+          </Tag> 
+          
+          <Tag>
+            <TagType>
+              <CloudServerOutlined />
+            </TagType>
+            <TagTitle>Google Cloud</TagTitle>
+          </Tag> 
           <Tag>
             <TagType>
               <CloudServerOutlined />
             </TagType>
             <TagTitle>AWS</TagTitle>
           </Tag>
-        </div> 
+          <Tag>
+            <TagType>
+              <CloudServerOutlined />
+            </TagType>
+            <TagTitle>Serverless</TagTitle>
+          </Tag> 
+        </div>
       </Container>
     </ServicesPanelStyles>
   );

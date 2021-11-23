@@ -150,7 +150,7 @@ const Body = () => {
                   class="object-detail-page-actions download-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://portfolio-images-upload-9983.s3-sa-east-1.amazonaws.com/wesley+CV.pdf"
+                  href={`${process.env.PUBLIC_URL}/assests/Curriulo.pdf`}
                 >
                   <Button btntype="primary" style={{ width: 120 }}>
                     Download CV

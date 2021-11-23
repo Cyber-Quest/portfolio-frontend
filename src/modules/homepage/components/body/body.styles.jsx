@@ -82,7 +82,7 @@ export const Container = styled.div`
         line-height: normal !important;
       }
     }
-    ${Avatar} {
+    .img-container {
       display: none;
     }
   }

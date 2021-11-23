@@ -5,7 +5,10 @@ export const AboutPanelStyles = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%; 
+  background-image: url("https://desktop.github.com/images/star-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 90px -150px, 0 0, 0 0;
 `;
 
 export const Title = styled.div`
@@ -18,7 +21,7 @@ export const Title = styled.div`
 
 export const Subject = styled.div`
   display: flex;
-  flex-flow: column; 
+  flex-flow: column;
   font-size: 15px;
   color: #000000;
   width: 100%;
