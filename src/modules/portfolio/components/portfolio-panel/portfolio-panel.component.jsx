@@ -59,27 +59,25 @@ const PortfolioPanel = ({ getProjects = () => null, projects }) => {
           Projects created with the aim of demonstrating my knowledge.
         </Subject>
         <div className="portfolio">
-          {!projects.loading ? (
-            data.length > 0 ? (
-              data.slice(0, 6).map((item, index) => {
-                return (
-                  <ProjectPanel
-                    key={`${index}`}
-                    image={`${process.env.PUBLIC_URL}/assests/img/${item.link}.png`}
-                    href={`https://${item.name}.netlify.app`}
-                    target="_blank"
-                  >
-                    <div>
-                      <p>{item.title}</p>
-                      <p>{item.subtitle}</p>
-                    </div>
-                  </ProjectPanel>
-                );
-              })
-            ) : (
-              <Empty />
-            )
-          ) : null}
+          {data.length > 0 ? (
+            data.slice(0, 6).map((item, index) => {
+              return (
+                <ProjectPanel
+                  key={`${index}`}
+                  image={`${process.env.PUBLIC_URL}/assests/img/${item.link}.png`}
+                  href={`https://${item.name}.netlify.app`}
+                  target="_blank"
+                >
+                  <div>
+                    <p>{item.title}</p>
+                    <p>{item.subtitle}</p>
+                  </div>
+                </ProjectPanel>
+              );
+            })
+          ) : (
+            <Empty />
+          )}
         </div>
         <a
           href="https://cyber-my-projects.netlify.app/"

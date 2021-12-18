@@ -114,8 +114,7 @@ const FooterPanel = () => {
         </Col>
       </Row>
       <CopyRight>
-        © 2020 Copyright. <br />
-        All rights reserverd. Supervised by
+        Created by <br />
         <span style={{ color: "#e6e6e6", marginLeft: "4px" }}>Wesley C. Ferreira</span>
       </CopyRight>
     </FooterPanelStyles>
