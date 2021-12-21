@@ -15,7 +15,6 @@ import AboutPage from "../../../about/pages/about.component";
 import ContactPage from "../../../contact/pages/contact.component";
 import ServicesPage from "../../../services/pages/services.component";
 import PortfolioPage from "../../../portfolio/pages/portfolio.component";
-
 import Button from "core/components/button/button.component";
 import RedirectLink from "core/components/redirect-link/redirect-link.component";
 
@@ -80,9 +79,9 @@ const Body = () => {
                   }
                 />
                 <Link
-                  href="#portfolio"
+                  href="#projects"
                   title={
-                    <Tooltip title="Portfolio" placement="left" color="white">
+                    <Tooltip title="Projects" placement="left" color="white">
                       <BsCircleFill style={{ fontSize: "12px" }} />
                     </Tooltip>
                   }
@@ -156,7 +155,7 @@ const Body = () => {
                     Download CV
                   </Button>
                 </a>
-                <RedirectLink href="#portfolio" title="Portfolio" />
+                <RedirectLink href="#projects" title="Projects" />
               </div>
             </Anchor>
           </div>
@@ -172,7 +171,7 @@ const Body = () => {
         <BordedConnector />
         <ServicesPage />
       </Card>
-      <Card id="portfolio">
+      <Card id="projects">
         <BordedConnector />
         <PortfolioPage />
       </Card>

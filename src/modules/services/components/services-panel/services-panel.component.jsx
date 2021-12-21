@@ -16,7 +16,7 @@ const ServicesPanel = () => {
   return (
     <ServicesPanelStyles>
       <Container>
-        <Title>Skills & Services</Title>
+        <Title>Skills & Web services</Title>
         <Subject>
           Programming languages ​​and web services acquired over time.
         </Subject>

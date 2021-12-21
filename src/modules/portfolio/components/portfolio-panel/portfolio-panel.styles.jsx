@@ -4,10 +4,8 @@ export const PortfolioPanelStyles = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; 
+  width: 100%;
   background-image: url("https://desktop.github.com/images/star-bg.svg");
-  background-repeat: no-repeat;
-
   background-position: 90px -100px, 0 0, 0 0;
 `;
 
@@ -39,52 +37,141 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     flex-wrap: wrap;
+  }
+  .main-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    color: white;
+    .project-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      .project-explication {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        width: 40%;
+        .project-apresentation {
+          font-size: 14px;
+          font-weight: 600;
+          color: #00ccff !important;
+        }
+        .project-name {
+          margin: 8px 0px 32px 0px;
+        }
+        .project-description {
+          box-shadow: 0 10px 30px -15px #0f0f0f;
+          background: white;
+          color: black;
+          padding: 24px;
+          margin-left: -62px;
+          border-radius: 3px;
+          span {
+            color: #00ccff !important;
+          }
+        }
+        .tags {
+          display: flex;
+          gap: 16px;
+          margin-top: 16px;
+          .tag {
+          }
+        }
+        .links {
+          margin-top: 16px;
+          display: flex;
+          gap: 8px;
+          font-size: 18px;
+          .link {
+          }
+        }
+      }
+    }
+    .project-item:nth-child(2) {
+      flex-direction: row-reverse;
+      .project-explication {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        .project-description {
+          margin-left: 0;
+          margin-right: -62px;
+        }
+      }
+    }
   }
 `;
 
-export const ProjectPanel = styled.a`
+export const ProjectImage = styled.image`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 3px;
-  cursor: pointer;
-  background: ${({ image }) => `url(${image})`};
+  box-shadow: 0 10px 30px -15px #0f0f0f;
+  background: ${({ image }) =>
+    ` linear-gradient(rgba(0, 204, 255,0.3),rgba(0, 204, 255,0.3)),url(${image})`};
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 300px;
+`;
 
-  background-size: cover;
-  height: 230px;
+export const ProjectPanel = styled.a`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3px;
+  cursor: pointer;
+  min-height: 310px;
   width: 100%;
-  max-width: 283px;
-  & div {
-    visibility: visible;
+  max-width: 304px;
+  background: white;
+  color: black !important;
+  padding: 24px;
+  box-shadow: 0 10px 30px -15px #0f0f0f; 
+    transition: transform 125ms; 
+  &:hover {  
+    
+    transform: translateY(-10px);
+  }
+  .header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: rgb(255, 255, 255, 0.9);
-    width: 100%;
-    height: 230px;
-    opacity: 0.8;
-    border-radius: 3px;
-    transition: visibility 0s, opacity 0.5s linear;
-    p {
-      width: auto;
-      font-size: 18px;
-      font-weight: 700;
-      color: black !important;
+    justify-content: space-between;
+    width: 300px;
+    .icon-folder {
+      font-size: 40px;
+      color: #00ccff;
     }
-    p:nth-child(2) {
-      font-size: 15px;
-      font-weight: 200 !important;
+    .links {
+      display: flex;
+      gap: 16px;
+      font-size: 20px;
+      margin-right: 48px;
+      .link {
+        color: black !important;
+      }
     }
   }
-
-  &:hover {
-    & div {
-      visibility: hidden;
-      opacity: 0;
+  .body {
+    display: flex;
+    flex-direction: column;
+    .body-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 16px;
+    }
+  }
+  .tags {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    .tag {
+      color: #04a7cf;
     }
   }
 `;

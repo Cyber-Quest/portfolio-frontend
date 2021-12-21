@@ -49,8 +49,8 @@ const FooterPanel = () => {
               <OptionsContainer>
                 <Link href="#home" title="HOME" />
                 <Link href="#about" title="ABOUT" />
-                <Link href="#services" title="SERVICES" />
-                <Link href="#portfolio" title="PORTFOLIO" />
+                <Link href="#services" title="SKILLS" />
+                <Link href="#projects" title="PROJECTS" />
                 <Link href="#contact" title="CONTACT" />
               </OptionsContainer>
             </Anchor>

@@ -50,7 +50,7 @@ const AboutPanel = () => {
               >
                 <Button btntype="primary">Hire Me</Button>
               </a>
-              <RedirectLink href="#portfolio" title="Portfolio" />
+              <RedirectLink href="#projects" title="Projects" />
             </div>
           </Anchor>
         </Subject>

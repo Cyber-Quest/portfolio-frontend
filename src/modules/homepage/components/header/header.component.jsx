@@ -35,10 +35,10 @@ const Header = () => {
         <Link href="#about" title="ABOUT ME"/> 
         </div>
          <div onClick={() =>{setMenuVisible(false)}}>
-        <Link href="#services" title="SERVICES"/> 
+        <Link href="#services" title="SKILLS"/> 
         </div>
          <div onClick={() =>{setMenuVisible(false)}}>
-        <Link href="#portfolio" title="PORTFOLIO" />
+        <Link href="#projects" title="PROJECTS" />
         </div>
         <div onClick={() =>{setMenuVisible(false)}}>
         <RedirectLink href="#contact" title="CONTACT" />

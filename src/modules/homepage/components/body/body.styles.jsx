@@ -1,13 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
 const navegation = keyframes` 
-  0%   {  top:30vh; transform: rotate(0deg); }
-  25%  {  top:30vh; transform: rotate(0deg);}
-  50%  { top:-450px; transform: rotate(0deg);} 
-  60%  { top:-450px; transform: rotate(180deg);}   
-  90%  { top:100vh; transform: rotate(180deg);} 
-  91%  { transform: rotate(0deg);}
-  100% { top: 30vh; transform: rotate(0deg);} 
+  0%   { transform: rotate(90deg);  left: 50vw;top: 30vh;} 
+  50%  { transform: rotate(90deg);left: 70vw; top: 20vh;}    
+  100% { transform: rotate(90deg);left: 50vw;top: 30vh;} 
 `;
 
 export const BodyStyles = styled.div`
@@ -40,7 +36,7 @@ export const Avatar = styled.div`
   background-repeat: no-repeat;
   min-width: 320px;
   min-height: 400px;
-  opacity: 0.7; 
+  opacity: 0.7;
   animation-name: ${navegation};
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -51,8 +47,8 @@ export const Container = styled.div`
   justify-content: space-between;
   width: 100%;
 
-  .img-container{
-    width: 320px; 
+  .img-container {
+    width: 320px;
   }
   div:first-child {
     h1 {
@@ -111,10 +107,10 @@ export const Card = styled.div`
 `;
 
 export const BordedConnector = styled.div`
-margin: 80px 0px;
+  margin: 80px 0px;
   border-left: 3px solid #595959;
   border-style: dashed;
   height: auto;
   width: 10px;
-  min-height: 60px; 
+  min-height: 60px;
 `;
