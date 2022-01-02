@@ -110,6 +110,7 @@ const PortfolioPanel = () => {
                   href="https://www.app.fluxopay.com.br"
                   className="link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FiExternalLink />
                 </a>
@@ -143,6 +144,7 @@ const PortfolioPanel = () => {
                   href="https://www.fluxopay.com.br"
                   className="link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FiExternalLink />
                 </a>
@@ -175,6 +177,7 @@ const PortfolioPanel = () => {
                   href="https://github.com/Cyber-Quest/crwn-clothing"
                   className="link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FiGithub />
                 </a>
@@ -182,6 +185,7 @@ const PortfolioPanel = () => {
                   href="https://cyber-crwn-clothing.netlify.app/"
                   className="link"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FiExternalLink />
                 </a>
