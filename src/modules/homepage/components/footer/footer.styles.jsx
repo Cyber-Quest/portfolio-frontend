@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "theme";
 
 export const FooterPanelStyles = styled.div`
   width: 100%;
@@ -31,7 +32,7 @@ export const CopyRight = styled.div`
 export const Logo = styled.div`
   display: flex;
   justify-content: flex-start;
-  color: white;
+  color: ${() => theme.primary_font_color};
   font-family: "Sansita Swashed", cursive;
   line-height: 26px;
   font-size: 30px;

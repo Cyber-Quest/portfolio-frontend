@@ -1,11 +1,11 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const navegation = keyframes` 
   0%   {    background-position: 0vw 0 } 
   50%  { background-position: -50vw 0}   
-  100% { background-position: -110vw 0} 
+  100% { background-position: -99vw 0} 
 `;
- 
+
 export const HomePageStyles = styled.div`
   position: relative;
   display: flex;
@@ -29,12 +29,12 @@ export const Container = styled.div`
 export const FixedComponent = styled.div`
   z-index: -5;
   position: absolute;
-  background-color: black;
   background-color: #24292e;
   background-image: url("https://desktop.github.com/images/star-bg.svg"),
-    linear-gradient(#191c20, #24292e 15%); 
-  background-position: center 0, 0 0, 0 0; 
+    linear-gradient(#191c20, #24292e 15%);
+  background-size: cover;
   animation-name: ${navegation};
+  background-repeat: repeat-x;
   animation-duration: 20s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

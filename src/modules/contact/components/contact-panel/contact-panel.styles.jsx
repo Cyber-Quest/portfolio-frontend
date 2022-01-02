@@ -1,19 +1,21 @@
 import styled from "styled-components";
+import theme from "theme";
 
 export const ContactPanelStyles = styled.div`
   max-width: 100%;
   width: auto;
-  padding: 50px 0px;
-  background-image: url("https://desktop.github.com/images/star-bg.svg");
+  padding: 40px 0px 0px 0px;
+  border-radius: 8px;
+  background:rgba(42, 57, 72);
   background-repeat: no-repeat;
-  background-position: -90px -100px, 0 0, 0 0;
+  margin-bottom: 128px;
+  box-shadow: 0 10px 30px -15px #0f0f0f;
 `;
 
 export const Panel = styled.div`
   width: 100%;
-  padding: 0px 70px;
-  background: ${({ color }) => `${color ? color : "transparent"}`};
-  min-height: 400px;
+  padding: 0px 40px;
+  background: ${({ color }) => `${color ? color : "transparent"}`}; 
   height: auto;
 
   h2 {
@@ -35,7 +37,7 @@ export const SocialNetworks = styled.div`
   flex-flow: column;
   gap: 48px;
   height: auto;
-  color: white;
+  color: ${() => theme.primary_font_color};
   font-size: 25px;
   @media only screen and (max-width: 800px) {
     display: flex;
@@ -54,7 +56,7 @@ export const Item = styled.div`
     span {
       display: inline-block;
       vertical-align: middle;
-      color: #b3b3b3;
+      color: #dbd6d1;
     }
   }
 `;

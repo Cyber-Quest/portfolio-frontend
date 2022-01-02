@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "theme";
 
 export const PortfolioPanelStyles = styled.div`
   display: flex;
@@ -37,14 +38,15 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
     flex-wrap: wrap;
+    margin-top: 16px;
   }
   .main-projects {
     display: flex;
     flex-direction: column;
     gap: 130px;
-    color: white;
+    color: ${() => theme.primary_font_color};
     .project-item {
       display: flex;
       justify-content: space-between;
@@ -64,12 +66,15 @@ export const Container = styled.div`
           margin: 8px 0px 32px 0px;
         }
         .project-description {
+          display:flex;
+          align-items: center;
           box-shadow: 0 10px 30px -15px #0f0f0f;
-          background: white;
-          color: black;
+          background: ${() => theme.secondary_color};
+          color: #d3d8de;
           padding: 24px;
           margin-left: -62px;
           border-radius: 3px;
+          min-height: 130px;
           span {
             color: #00ccff !important;
           }
@@ -106,7 +111,7 @@ export const Container = styled.div`
   }
 `;
 
-export const ProjectImage = styled.image`
+export const ProjectImage = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,11 +119,17 @@ export const ProjectImage = styled.image`
   border-radius: 3px;
   box-shadow: 0 10px 30px -15px #0f0f0f;
   background: ${({ image }) =>
-    ` linear-gradient(rgba(0, 204, 255,0.3),rgba(0, 204, 255,0.3)),url(${image})`};
+    ` linear-gradient(rgba(0, 204, 255,0.2),rgba(0, 204, 255,0.2)),url(${image})`};
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 60%;
   height: 300px;
+  &:hover {
+    background: ${({ image }) =>
+      `  url(${image})`};
+       background-size: 100% 100%;
+       background-repeat: no-repeat;
+  }
 `;
 
 export const ProjectPanel = styled.a`
@@ -129,14 +140,13 @@ export const ProjectPanel = styled.a`
   cursor: pointer;
   min-height: 310px;
   width: 100%;
-  max-width: 304px;
-  background: white;
-  color: black !important;
+  max-width: 296px;
+  background: ${() => theme.secondary_color};
+  color: #d3d8de !important;
   padding: 24px;
-  box-shadow: 0 10px 30px -15px #0f0f0f; 
-    transition: transform 125ms; 
-  &:hover {  
-    
+  box-shadow: 0 10px 20px -15px #0f0f0f;
+  transition: transform 125ms;
+  &:hover {
     transform: translateY(-10px);
   }
   .header {
@@ -145,7 +155,7 @@ export const ProjectPanel = styled.a`
     width: 300px;
     .icon-folder {
       font-size: 40px;
-      color: #00ccff;
+      color: ${() => theme.third_font_color};
     }
     .links {
       display: flex;
@@ -153,7 +163,7 @@ export const ProjectPanel = styled.a`
       font-size: 20px;
       margin-right: 48px;
       .link {
-        color: black !important;
+        color: #d3d8de !important;
       }
     }
   }
@@ -164,6 +174,7 @@ export const ProjectPanel = styled.a`
       font-size: 18px;
       font-weight: 700;
       margin-top: 16px;
+      text-transform: capitalize;
     }
   }
   .tags {
@@ -171,7 +182,7 @@ export const ProjectPanel = styled.a`
     gap: 16px;
     margin-top: 16px;
     .tag {
-      color: #04a7cf;
+      color: #b6bec8;
     }
   }
 `;

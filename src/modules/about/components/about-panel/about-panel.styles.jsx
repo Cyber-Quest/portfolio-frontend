@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "theme";
 
 export const AboutPanelStyles = styled.div`
   display: flex;
@@ -23,7 +24,7 @@ export const Subject = styled.div`
   display: flex;
   flex-flow: column;
   font-size: 15px;
-  color: #000000;
+  color: #d3d8de;
   width: 100%;
   text-align: left !important;
   height: auto;
@@ -35,11 +36,11 @@ export const Subject = styled.div`
   }
   .about-item {
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: ${() => theme.secondary_color};
     width: 283px;
     padding: 32px;
     h3 {
-      color: #000000 !important;
+      color: #c5cbd3 !important;
     }
   }
 `;

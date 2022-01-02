@@ -13,6 +13,21 @@ import {
 } from "./services-panel.styles";
 
 const ServicesPanel = () => {
+  const services = [
+    { name: "C", type: "s" },
+    { name: "C#", type: "s" },
+    { name: "SQL", type: "s" },
+    { name: "HTML", type: "s" },
+    { name: "CSS", type: "s" },
+    { name: "PHP", type: "s" },
+    { name: "JS", type: "s" },
+    { name: "React.js", type: "s" },
+    { name: "Node.js", type: "s" },
+    { name: "Google Cloud", type: "w" },
+    { name: "AWS", type: "w" },
+    { name: "Serverless", type: "w" },
+  ];
+
   return (
     <ServicesPanelStyles>
       <Container>
@@ -21,7 +36,7 @@ const ServicesPanel = () => {
           Programming languages ​​and web services acquired over time.
         </Subject>
         <div
-          style={{  
+          style={{
             display: "flex",
             flexFlow: "row",
             justifyContent: "center",
@@ -29,79 +44,20 @@ const ServicesPanel = () => {
             gap: "8px",
           }}
         >
-           <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>C</TagTitle>
-          </Tag>
-           <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>C#</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>SQL</TagTitle>
-          </Tag> 
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>HTML</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>CSS</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>PHP</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>JS</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>React.js</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <BiCodeAlt />
-            </TagType>
-            <TagTitle>Node.js</TagTitle>
-          </Tag> 
-          
-          <Tag>
-            <TagType>
-              <CloudServerOutlined />
-            </TagType>
-            <TagTitle>Google Cloud</TagTitle>
-          </Tag> 
-          <Tag>
-            <TagType>
-              <CloudServerOutlined />
-            </TagType>
-            <TagTitle>AWS</TagTitle>
-          </Tag>
-          <Tag>
-            <TagType>
-              <CloudServerOutlined />
-            </TagType>
-            <TagTitle>Serverless</TagTitle>
-          </Tag> 
+          {services.map((element) => {
+            return (
+              <Tag>
+                <TagType>
+                  {element.type === "s" ? (
+                    <BiCodeAlt />
+                  ) : (
+                    <CloudServerOutlined />
+                  )}
+                </TagType>
+                <TagTitle>{element.name}</TagTitle>
+              </Tag>
+            );
+          })} 
         </div>
       </Container>
     </ServicesPanelStyles>

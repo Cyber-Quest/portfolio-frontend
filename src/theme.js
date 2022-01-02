@@ -1,6 +1,6 @@
 const GlobalTheme = {
   primary_color: "#00ccff",
-  secondary_color: "#3399ff",
+  secondary_color: "#2a3948",
   third_color: "#FF861C",
   fourth_color: "#FD7171",
   default_color: "#EFF1F5",
@@ -12,9 +12,9 @@ const GlobalTheme = {
   max_spacing: "24px",
   ultra_max_spacing: "32px",
 
-  primary_font_color: "#191919",
-  secondary_font_color: "#FFFFFF",
-  third_font_color: "#A0A8BA",
+  primary_font_color: "#dbd6d1",
+  secondary_font_color: "black",
+  third_font_color: "#00ccff",
 };
 
 export default GlobalTheme;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "theme";
 
 export const ServicesPanelStyles = styled.div`   
     display:flex; 
@@ -40,13 +41,13 @@ export const Container = styled.div`
 export const Tag = styled.div` 
   display:flex;
   align-items:center; 
-  background: white;
-  color: black;
-  color:white;
+  background: ${() =>theme.secondary_color};
+  color: ${() =>theme.secondary_font_color};
   width:145px;
   height: 40px;
   padding: 5px 8px;
   border-radius:3px;
+  font-size: 12px;
 `;
 
 export const TagType = styled.div` 
@@ -54,18 +55,20 @@ export const TagType = styled.div`
   display:flex;
   align-items:center;
   justify-content:center;
-  background: black; 
+  background: ${() =>theme.primary_color};
   border-radius:50%; 
   height: auto;
-  width:30px;
-  height:30px; 
+  width:25px;
+  height:25px; 
+  
+  font-size: 12px;
 `;
 
 export const TagTitle = styled.div`
-color: black;
+color: ${() =>theme.third_font_color};;
  float:left;
  margin-left:10px; 
- font-size:14px;
+ font-size:12px;
  font-weight:500;
  width:auto;
 `;

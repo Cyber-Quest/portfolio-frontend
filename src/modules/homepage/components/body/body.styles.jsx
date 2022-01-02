@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import theme from "theme";
 
 const navegation = keyframes` 
   0%   { transform: rotate(90deg);  left: 50vw;top: 30vh;} 
@@ -13,7 +14,7 @@ export const BodyStyles = styled.div`
 `;
 
 export const SocialNetworks = styled.div`
-  color: white;
+  color: ${() => theme.primary_font_color};
   display: flex !important;
   flex-flow: row !important;
   width: 100%;
@@ -42,6 +43,7 @@ export const Avatar = styled.div`
   animation-iteration-count: infinite;
   position: absolute;
 `;
+
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
@@ -53,7 +55,7 @@ export const Container = styled.div`
   div:first-child {
     h1 {
       font-family: Merriweather Sans, sans-serif;
-      color: white;
+      color: ${() => theme.primary_font_color};
       font-size: 7em;
       width: auto;
       line-height: 90px;
