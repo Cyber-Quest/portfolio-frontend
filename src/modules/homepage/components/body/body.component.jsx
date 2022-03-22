@@ -149,7 +149,7 @@ const Body = () => {
                   class="object-detail-page-actions download-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={`${process.env.PUBLIC_URL}/assests/Curriulo.pdf`}
+                  href={`${process.env.PUBLIC_URL}/assests/Curriculo.pdf`}
                 >
                   <Button btntype="primary" style={{ width: 120 }}>
                     Download CV
