@@ -6,6 +6,10 @@ const HomePage = lazy(() =>
   import("./modules/homepage/pages/homepage.component")
 );
 
+const Projects = lazy(() =>
+  import("./modules/projects")
+);
+
 const loadingSpinner = (
   <div
     style={{
@@ -20,13 +24,17 @@ const loadingSpinner = (
   </div>
 );
 
-const Routes = ({ user, drawer, onCloseDrawer }) => { 
+const Routes = () => { 
   return (
     <Suspense fallback={loadingSpinner}>
          <Switch>
             <Route exact
                 path="/"
                 render={() => <HomePage/> }> 
+            </Route>  
+            <Route exact
+                path="/projects"
+                render={() => <Projects/> }> 
             </Route> 
             <Redirect to={"/"} />
         </Switch>
